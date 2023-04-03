@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-
 <html>
 
-  <head>
+<head>
+  <title>Today I Learnt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/dracula%20theme@2.2.2/dracula.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-    <title>Today I Learned</title>
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-  </head>
-
-  <body>
-
-    <div class="container">
-
-      <h1>Today I Learned</h1>
-
-      <form>
-
-        <label for="learning">T I L</label>
-
-        <input type="text" id="learning" name="learning" required>
-
-        <button type="button" onclick="saveLearning()">Save</button>
-
+<body>
+  <header class="header">
+    <nav class="nav">
+      <button class="toggle-menu">&#9776;</button>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="til-box">
+      <h2>Today I Learned</h2>
+      <form id="til-form">
+        <label for="til-input">Enter your learning:</label>
+        <input type="text" id="til-input" name="til-input" required>
+        <button type="submit">Add</button>
       </form>
-
       <ul id="learning-list"></ul>
-
     </div>
-
-    <script src="script.js"></script>
-
-  </body>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2023 Today I Learnt</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
 </html>
-
