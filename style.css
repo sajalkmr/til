@@ -14,25 +14,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .til-box {
     max-width: 600px;
-    width: 100%;
-    padding: 20px;
+    width: 50%;
+    padding: 10px;
     border-radius: 5px;
     background-color: #282a36;
     color: #f8f8f2;
-    text-align: center;
+    text-align: left;
 }
 
-header,
+header {
+    background-color: #44475a;
+    color: #f8f8f2;
+    text-align: center;
+    padding: 15px;
+    
+}
 footer {
     background-color: #44475a;
     color: #f8f8f2;
     text-align: center;
     padding: 10px;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    margin-top: 80px;
+
 }
 
 header h1,
